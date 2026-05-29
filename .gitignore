@@ -1,0 +1,9 @@
+# Local Claude Code settings (personal, not for publishing)
+.claude/
+
+# Scratch notes
+temp.md
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

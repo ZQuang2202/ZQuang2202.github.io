@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quang Nguyen — AI &amp; Robotics</title>
+  <meta name="description" content="Quang Nguyen — AI &amp; Robotics engineer working on human motion understanding and robot manipulation." />
+  <meta name="author" content="Quang Nguyen" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Quang Nguyen — AI &amp; Robotics" />
+  <meta property="og:description" content="AI &amp; Robotics engineer working on human motion understanding and robot manipulation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zquang2202.github.io/" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <!-- Apply saved/OS theme before paint to avoid a flash of the wrong theme. -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var dark = saved ? saved === "dark"
+          : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for social / link icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Dark / light toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark / light mode">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+
+  <div class="layout">
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="sidebar">
+      <img class="avatar" src="assets/img/profile.jpg" alt="Quang Nguyen" />
+
+      <h1 class="name">Quang Nguyen</h1>
+      <p class="role">AI &amp; Robotics Engineer</p>
+
+      <p class="location"><i class="fa-solid fa-location-dot"></i> Hanoi, Vietnam</p>
+
+      <!-- ===================== SOCIAL LINKS ===================== -->
+      <nav class="socials" aria-label="Social links">
+        <!-- TODO: replace the email below if you prefer a different contact address -->
+        <a href="mailto:quangnv2202@gmail.com" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://scholar.google.com/citations?user=F5Fr2ysAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+        <a href="https://github.com/ZQuang2202" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <!-- TODO: replace with your specific profile, e.g. linkedin.com/in/your-handle -->
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <!-- TODO: add your X / Twitter URL (replace the # below) -->
+        <a href="#" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </nav>
+
+      <a class="cv-button" href="CV_QuangNguyen.pdf" target="_blank" rel="noopener">
+        <i class="fa-regular fa-file-lines"></i> Curriculum Vitae
+      </a>
+    </aside>
+
+    <!-- ===================== MAIN ===================== -->
+    <main class="content">
+
+      <!-- ----------- ABOUT ----------- -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a robotics and AI enthusiast. I currently work as an AI Manipulation Engineer at
+          VinDynamics, and previously worked as an AI Research Resident at FPT Software AI Center,
+          under Prof. Anh Nguyen.
+        </p>
+      </section>
+
+      <!-- ----------- RESEARCH INTERESTS ----------- -->
+      <section id="interests">
+        <h2>Research Interests</h2>
+        <p>
+          Concretely, my work draws on <strong>generative models of human motion</strong>,
+          <strong>vision–language–action models</strong>, and <strong>language-driven grasping</strong>
+          and dexterous, in-hand manipulation. I am also interested in <strong>world models</strong>,
+          <strong>LLM-based agentic systems</strong>, and <strong>reinforcement and imitation
+          learning</strong> as tools for building robots that generalize to the real world.
+        </p>
+      </section>
+
+      <!-- ----------- EXPERIENCE ----------- -->
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul class="exp-list">
+          <li class="exp-item">
+            <div class="exp-head">
+              <span class="exp-role">AI Manipulation Engineer</span>
+              <span class="exp-date">Dec 2025 – Present</span>
+            </div>
+            <div class="exp-org">VinDynamics — Humanoid Robot Research (In-Hand Manipulation Team), Hanoi</div>
+            <ul class="exp-points">
+              <li>Developing methods for dexterous hand manipulation, agentic manipulation, and
+                vision–language–action (VLA) models.</li>
+              <li>Building teleoperation systems for the hand and arm, including motion-retargeting
+                algorithms.</li>
+              <li>Building simulation environments and robot integration with Isaac Sim, MuJoCo, and ROS.</li>
+            </ul>
+          </li>
+          <li class="exp-item">
+            <div class="exp-head">
+              <span class="exp-role">AI Research Resident</span>
+              <span class="exp-date">Jul 2024 – Nov 2025</span>
+            </div>
+            <div class="exp-org">FPT Software AI Center, Hanoi</div>
+            <ul class="exp-points">
+              <li>Multimodal robot learning, human-motion learning, and LLM-based multi-agent systems.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ----------- NEWS ----------- -->
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news-list">
+          <li><span class="news-date">Mar 2026</span><span class="news-text"><em>SIGMA</em>, a physics-based benchmark for gas-chimney understanding in seismic images, is accepted to <strong>CVPR 2026</strong>! 🎉</span></li>
+          <li><span class="news-date">Sep 2025</span><span class="news-text"><em>Temporally Conditional Mamba</em> for human motion learning is accepted to <strong>SIGGRAPH Asia 2025</strong>.</span></li>
+          <li><span class="news-date">Aug 2025</span><span class="news-text"><em>Skeleton Mamba</em> (EgoMusic-driven human dance motion estimation) is accepted to <strong>ICCV 2025</strong>!</span></li>
+          <li><span class="news-date">Jun 2025</span><span class="news-text"><em>GraspMAS</em> is accepted to <strong>IROS 2025</strong>! 🤖</span></li>
+          <!-- TODO: add more news (joined a lab/company, awards, talks, internships, etc.) -->
+        </ul>
+      </section>
+
+      <!-- ----------- PUBLICATIONS ----------- -->
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="subtle">(<sup>*</sup> denotes equal contribution. See my <a href="https://scholar.google.com/citations?user=F5Fr2ysAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> for the full list.)</p>
+
+        <!-- Publication 1 — SIGMA (CVPR 2026) -->
+        <article class="pub">
+          <div class="pub-thumb" data-acronym="SIGMA">
+            <img src="assets/img/pub/sigma.png" alt="SIGMA teaser" loading="lazy" decoding="async" onerror="this.style.display='none'" />
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">SIGMA: A Physics-Based Benchmark for Gas Chimney Understanding in Seismic Images</h3>
+            <p class="pub-authors">Bao Truong, <strong>Quang Nguyen</strong>, Baoru Huang, Jinpei Han, Van Nguyen, Ngan Le, Minh-Tan Pham, Doan Huy Hien, Anh Nguyen</p>
+            <p class="pub-venue"><span class="badge">CVPR 2026</span></p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2603.23439" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> arXiv</a>
+              <!-- TODO: add Project / Code links for SIGMA when available -->
+            </div>
+          </div>
+        </article>
+
+        <!-- Publication 2 — Skeleton Mamba (ICCV 2025) -->
+        <article class="pub">
+          <div class="pub-thumb" data-acronym="Skeleton&#10;Mamba">
+            <img src="assets/img/pub/skeletonmamba.png" alt="Skeleton Mamba teaser" loading="lazy" decoding="async" onerror="this.style.display='none'" />
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">EgoMusic-driven Human Dance Motion Estimation with Skeleton Mamba</h3>
+            <p class="pub-authors"><strong>Quang Nguyen</strong>, Nhat Le, Baoru Huang, Minh Nhat Vu, Chengcheng Tang, Van Nguyen, Ngan Le, Thieu Vo, Anh Nguyen</p>
+            <p class="pub-venue"><span class="badge">ICCV 2025</span></p>
+            <div class="pub-links">
+              <a href="https://zquang2202.github.io/SkeletonMamba/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Project</a>
+              <a href="https://arxiv.org/abs/2508.10522" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> arXiv</a>
+              <a href="https://github.com/Fsoft-AIC/SkeletonMamba" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Publication 3 — GraspMAS (IROS 2025) -->
+        <article class="pub">
+          <div class="pub-thumb" data-acronym="GraspMAS">
+            <img src="assets/img/pub/graspmas.png" alt="GraspMAS teaser" loading="lazy" decoding="async" onerror="this.style.display='none'" />
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">GraspMAS: Zero-Shot Language-driven Grasp Detection with Multi-Agent System</h3>
+            <p class="pub-authors"><strong>Quang Nguyen</strong>, Tri Le, Huy Nguyen, Thieu Vo, Tung D. Ta, Baoru Huang, Minh Nhat Vu, Anh Nguyen</p>
+            <p class="pub-venue"><span class="badge">IROS 2025</span></p>
+            <div class="pub-links">
+              <a href="https://zquang2202.github.io/GraspMAS/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Project</a>
+              <a href="https://arxiv.org/abs/2506.18448" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> arXiv</a>
+              <a href="https://github.com/Fsoft-AIC/GraspMAS" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Publication 4 — TCM (SIGGRAPH Asia 2025) -->
+        <article class="pub">
+          <div class="pub-thumb" data-acronym="TCM">
+            <img src="assets/img/pub/tcm.png" alt="Temporally Conditional Mamba teaser" loading="lazy" decoding="async" onerror="this.style.display='none'" />
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">Learning Human Motion with Temporally Conditional Mamba</h3>
+            <p class="pub-authors"><strong>Quang Nguyen</strong>, Tri Le, Minh Nhat Vu, Ngan Le, Thieu Vo, Anh Nguyen</p>
+            <p class="pub-venue"><span class="badge">SIGGRAPH Asia 2025</span></p>
+            <div class="pub-links">
+              <a href="https://zquang2202.github.io/TCM/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Project</a>
+              <a href="https://arxiv.org/abs/2510.12573" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> arXiv</a>
+              <a href="https://github.com/Fsoft-AIC/TCM" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Publication 5 — RoboDesign1M (preprint) -->
+        <article class="pub">
+          <div class="pub-thumb" data-acronym="Robo&#10;Design1M">
+            <img src="assets/img/pub/robodesign1m.png" alt="RoboDesign1M teaser" loading="lazy" decoding="async" onerror="this.style.display='none'" />
+          </div>
+          <div class="pub-body">
+            <h3 class="pub-title">RoboDesign1M: A Large-scale Dataset for Robot Design Understanding</h3>
+            <p class="pub-authors">Tri Le, Toan Nguyen, Quang Tran, <strong>Quang Nguyen</strong>, Baoru Huang, Hoan Nguyen, Minh Nhat Vu, Tung D. Ta, Anh Nguyen</p>
+            <p class="pub-venue"><span class="badge badge-preprint">Preprint 2025</span></p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2503.06796" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> arXiv</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ----------- SERVICES ----------- -->
+      <section id="services">
+        <h2>Academic Services</h2>
+        <ul class="services-list">
+          <li><strong>Reviewer:</strong> IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026.</li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; <span id="year"></span> Quang Nguyen · Built with <i class="fa-solid fa-heart heart" aria-hidden="true"></i>, curiosity, and a few thousand gradient steps.</p>
+        <p class="visits" id="visits" hidden><i class="fa-solid fa-eye" aria-hidden="true"></i> <span id="visit-count">—</span> visits</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
