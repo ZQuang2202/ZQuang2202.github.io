@@ -92,6 +92,8 @@
       navLinks.forEach(function (a) { a.classList.remove("active"); });
       if (linkById[id]) { linkById[id].classList.add("active"); }
     };
+    // Highlight the first section by default (e.g. while at the very top).
+    if (sections.length) { setActive(sections[0].id); }
     var spyIO = new IntersectionObserver(function (entries) {
       // Pick the entry nearest the top that is intersecting.
       var visible = entries.filter(function (e) { return e.isIntersecting; });
