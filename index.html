@@ -7,17 +7,32 @@
   <meta name="description" content="Quang Nguyen — AI &amp; Robotics engineer working on human motion understanding and robot manipulation." />
   <meta name="author" content="Quang Nguyen" />
 
+  <link rel="canonical" href="https://zquang2202.github.io/" />
+  <meta name="theme-color" content="#a8842a" />
+
   <!-- Open Graph / social preview -->
   <meta property="og:title" content="Quang Nguyen — AI &amp; Robotics" />
   <meta property="og:description" content="AI &amp; Robotics engineer working on human motion understanding and robot manipulation." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://zquang2202.github.io/" />
+  <meta property="og:site_name" content="Quang Nguyen" />
+  <meta property="og:image" content="https://zquang2202.github.io/assets/img/profile.jpg" />
+  <meta property="og:image:alt" content="Quang Nguyen" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="400" />
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Quang Nguyen — AI &amp; Robotics" />
+  <meta name="twitter:description" content="AI &amp; Robotics engineer working on human motion understanding and robot manipulation." />
+  <meta name="twitter:image" content="https://zquang2202.github.io/assets/img/profile.jpg" />
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 
   <!-- Apply saved/OS theme before paint to avoid a flash of the wrong theme. -->
   <script>
     (function () {
+      document.documentElement.classList.add("js");
       try {
         var saved = localStorage.getItem("theme");
         var dark = saved ? saved === "dark"
@@ -35,11 +50,75 @@
   <!-- Font Awesome for social / link icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Structured data for search engines (Person + publications) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://zquang2202.github.io/#person",
+        "name": "Quang Nguyen",
+        "url": "https://zquang2202.github.io/",
+        "image": "https://zquang2202.github.io/assets/img/profile.jpg",
+        "jobTitle": "AI & Robotics Engineer",
+        "worksFor": { "@type": "Organization", "name": "VinDynamics" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Hanoi University of Science and Technology" },
+        "knowsAbout": ["Robot manipulation", "Dexterous manipulation", "Human motion learning", "Vision-language-action models", "Reinforcement learning", "Imitation learning"],
+        "sameAs": [
+          "https://github.com/ZQuang2202",
+          "https://scholar.google.com/citations?user=F5Fr2ysAAAAJ"
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "SIGMA: A Physics-Based Benchmark for Gas Chimney Understanding in Seismic Images",
+        "author": [{"@type":"Person","name":"Bao Truong"},{"@type":"Person","name":"Quang Nguyen"},{"@type":"Person","name":"Baoru Huang"},{"@type":"Person","name":"Jinpei Han"},{"@type":"Person","name":"Van Nguyen"},{"@type":"Person","name":"Ngan Le"},{"@type":"Person","name":"Minh-Tan Pham"},{"@type":"Person","name":"Doan Huy Hien"},{"@type":"Person","name":"Anh Nguyen"}],
+        "datePublished": "2026",
+        "url": "https://arxiv.org/abs/2603.23439"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "EgoMusic-driven Human Dance Motion Estimation with Skeleton Mamba",
+        "author": [{"@type":"Person","name":"Quang Nguyen"},{"@type":"Person","name":"Nhat Le"},{"@type":"Person","name":"Baoru Huang"},{"@type":"Person","name":"Minh Nhat Vu"},{"@type":"Person","name":"Chengcheng Tang"},{"@type":"Person","name":"Van Nguyen"},{"@type":"Person","name":"Ngan Le"},{"@type":"Person","name":"Thieu Vo"},{"@type":"Person","name":"Anh Nguyen"}],
+        "datePublished": "2025",
+        "url": "https://arxiv.org/abs/2508.10522"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "GraspMAS: Zero-Shot Language-driven Grasp Detection with Multi-Agent System",
+        "author": [{"@type":"Person","name":"Quang Nguyen"},{"@type":"Person","name":"Tri Le"},{"@type":"Person","name":"Huy Nguyen"},{"@type":"Person","name":"Thieu Vo"},{"@type":"Person","name":"Tung D. Ta"},{"@type":"Person","name":"Baoru Huang"},{"@type":"Person","name":"Minh Nhat Vu"},{"@type":"Person","name":"Anh Nguyen"}],
+        "datePublished": "2025",
+        "url": "https://arxiv.org/abs/2506.18448"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Learning Human Motion with Temporally Conditional Mamba",
+        "author": [{"@type":"Person","name":"Quang Nguyen"},{"@type":"Person","name":"Tri Le"},{"@type":"Person","name":"Minh Nhat Vu"},{"@type":"Person","name":"Ngan Le"},{"@type":"Person","name":"Thieu Vo"},{"@type":"Person","name":"Anh Nguyen"}],
+        "datePublished": "2025",
+        "url": "https://arxiv.org/abs/2510.12573"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "RoboDesign1M: A Large-scale Dataset for Robot Design Understanding",
+        "author": [{"@type":"Person","name":"Tri Le"},{"@type":"Person","name":"Toan Nguyen"},{"@type":"Person","name":"Quang Tran"},{"@type":"Person","name":"Quang Nguyen"},{"@type":"Person","name":"Baoru Huang"},{"@type":"Person","name":"Hoan Nguyen"},{"@type":"Person","name":"Minh Nhat Vu"},{"@type":"Person","name":"Tung D. Ta"},{"@type":"Person","name":"Anh Nguyen"}],
+        "datePublished": "2025",
+        "url": "https://arxiv.org/abs/2503.06796"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Dark / light toggle -->
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark / light mode">
     <i class="fa-solid fa-moon"></i>
+  </button>
+
+  <!-- Back to top -->
+  <button id="to-top" class="to-top" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
   </button>
 
   <div class="layout">
@@ -67,13 +146,23 @@
       <a class="cv-button" href="CV_QuangNguyen.pdf" target="_blank" rel="noopener">
         <i class="fa-regular fa-file-lines"></i> Curriculum Vitae
       </a>
+
+      <!-- In-page navigation (highlights the current section on scroll) -->
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#about">About</a>
+        <a href="#interests">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#services">Services</a>
+      </nav>
     </aside>
 
     <!-- ===================== MAIN ===================== -->
     <main class="content">
 
       <!-- ----------- ABOUT ----------- -->
-      <section id="about">
+      <section id="about" class="reveal">
         <h2>About Me</h2>
         <p>
           I am a robotics and AI enthusiast. I currently work as an AI Manipulation Engineer at
@@ -83,7 +172,7 @@
       </section>
 
       <!-- ----------- RESEARCH INTERESTS ----------- -->
-      <section id="interests">
+      <section id="interests" class="reveal">
         <h2>Research Interests</h2>
         <p>
           Concretely, my work draws on <strong>generative models of human motion</strong>,
@@ -95,7 +184,7 @@
       </section>
 
       <!-- ----------- EXPERIENCE ----------- -->
-      <section id="experience">
+      <section id="experience" class="reveal">
         <h2>Experience</h2>
         <ul class="exp-list">
           <li class="exp-item">
@@ -103,7 +192,7 @@
               <span class="exp-role">AI Manipulation Engineer</span>
               <span class="exp-date">Dec 2025 – Present</span>
             </div>
-            <div class="exp-org">VinDynamics — Humanoid Robot Research (In-Hand Manipulation Team), Hanoi</div>
+            <div class="exp-org">VinDynamics — Humanoid Robot Research (Hand Development Team), Hanoi</div>
             <ul class="exp-points">
               <li>Developing methods for dexterous hand manipulation, agentic manipulation, and
                 vision–language–action (VLA) models.</li>
@@ -126,7 +215,7 @@
       </section>
 
       <!-- ----------- NEWS ----------- -->
-      <section id="news">
+      <section id="news" class="reveal">
         <h2>News</h2>
         <ul class="news-list">
           <li><span class="news-date">Mar 2026</span><span class="news-text"><em>SIGMA</em>, a physics-based benchmark for gas-chimney understanding in seismic images, is accepted to <strong>CVPR 2026</strong>! 🎉</span></li>
@@ -138,7 +227,7 @@
       </section>
 
       <!-- ----------- PUBLICATIONS ----------- -->
-      <section id="publications">
+      <section id="publications" class="reveal">
         <h2>Publications</h2>
         <p class="subtle">(<sup>*</sup> denotes equal contribution. See my <a href="https://scholar.google.com/citations?user=F5Fr2ysAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> for the full list.)</p>
 
@@ -226,14 +315,14 @@
       </section>
 
       <!-- ----------- SERVICES ----------- -->
-      <section id="services">
+      <section id="services" class="reveal">
         <h2>Academic Services</h2>
         <ul class="services-list">
           <li><strong>Reviewer:</strong> IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026.</li>
         </ul>
       </section>
 
-      <footer class="footer">
+      <footer class="footer reveal">
         <p>&copy; <span id="year"></span> Quang Nguyen · Built with <i class="fa-solid fa-heart heart" aria-hidden="true"></i>, curiosity, and a few thousand gradient steps.</p>
         <p class="visits" id="visits" hidden><i class="fa-solid fa-eye" aria-hidden="true"></i> <span id="visit-count">—</span> visits</p>
       </footer>
