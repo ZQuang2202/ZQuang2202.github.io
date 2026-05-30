@@ -49,7 +49,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet" />
   <!-- Font Awesome for social / link icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css?v=3" />
+  <link rel="stylesheet" href="assets/css/style.css?v=5" />
 
   <!-- Structured data for search engines (Person + publications) -->
   <script type="application/ld+json">
@@ -174,13 +174,12 @@
       <!-- ----------- RESEARCH INTERESTS ----------- -->
       <section id="interests" class="reveal">
         <h2>Research Interests</h2>
-        <p>
-          Concretely, my work draws on <strong>generative models of human motion</strong>,
-          <strong>vision–language–action models</strong>, and <strong>language-driven grasping</strong>
-          and dexterous, in-hand manipulation. I am also interested in <strong>world models</strong>,
-          <strong>LLM-based agentic systems</strong>, and <strong>reinforcement and imitation
-          learning</strong> as tools for building robots that generalize to the real world.
-        </p>
+        <p>Nowadays, I'm particularly interested in:</p>
+        <ul class="interest-list">
+          <li><strong>Vision-language-action models:</strong> Enabling robots to translate natural language and visual perception into language-driven grasping and dexterous, in-hand manipulation.</li>
+          <li><strong>World models:</strong> Learning predictive models of the physical world so that robots can anticipate the consequences of their actions and plan ahead.</li>
+          <li><strong>Generative models of motion:</strong> Designing generative models, including physics-informed ones, that synthesize realistic and physically plausible motion.</li>
+        </ul>
       </section>
 
       <!-- ----------- EXPERIENCE ----------- -->
@@ -194,10 +193,9 @@
             </div>
             <div class="exp-org">VinDynamics — Humanoid Robot Research (Hand Development Team), Hanoi</div>
             <ul class="exp-points">
-              <li>Developing methods for dexterous hand manipulation, agentic manipulation, and
+              <li>Developing methods for dexterous hand manipulation, agentic manipulation system, and
                 vision–language–action (VLA) models.</li>
-              <li>Building teleoperation systems for the hand and arm, including motion-retargeting
-                algorithms.</li>
+              <li>Building teleoperation systems for the hand and arm, motion-retargeting algorithms.</li>
               <li>Building simulation environments and robot integration with Isaac Sim, MuJoCo, and ROS.</li>
             </ul>
           </li>
@@ -220,8 +218,6 @@
         <ul class="news-list">
           <li><span class="news-date">Mar 2026</span><span class="news-text"><em>SIGMA</em>, a physics-based benchmark for gas-chimney understanding in seismic images, is accepted to <strong>CVPR 2026</strong>! 🎉</span></li>
           <li><span class="news-date">Sep 2025</span><span class="news-text"><em>Temporally Conditional Mamba</em> for human motion learning is accepted to <strong>SIGGRAPH Asia 2025</strong>.</span></li>
-          <li><span class="news-date">Aug 2025</span><span class="news-text"><em>Skeleton Mamba</em> (EgoMusic-driven human dance motion estimation) is accepted to <strong>ICCV 2025</strong>!</span></li>
-          <li><span class="news-date">Jun 2025</span><span class="news-text"><em>GraspMAS</em> is accepted to <strong>IROS 2025</strong>! 🤖</span></li>
           <!-- TODO: add more news (joined a lab/company, awards, talks, internships, etc.) -->
         </ul>
       </section>
@@ -323,7 +319,7 @@
       </section>
 
       <footer class="footer reveal">
-        <p>&copy; <span id="year"></span> Quang Nguyen · Built with <i class="fa-solid fa-heart heart" aria-hidden="true"></i>, curiosity, and a few thousand gradient steps.</p>
+        <p>&copy; <span id="year"></span> Quang Nguyen · Built with a few thousand gradient steps.</p>
         <p class="visits" id="visits" hidden><i class="fa-solid fa-eye" aria-hidden="true"></i> <span id="visit-count">—</span> visits</p>
       </footer>
     </main>

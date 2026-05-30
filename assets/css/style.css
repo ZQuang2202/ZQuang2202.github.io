@@ -222,6 +222,15 @@ html[data-theme="dark"] .cv-button:hover { color: #11151b; }
 }
 .news-text { flex: 1; }
 
+/* ---------- Research interests list ---------- */
+.interest-list {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+.interest-list li { margin-bottom: 7px; }
+.interest-list li::marker { color: var(--accent); }
+.interest-list strong { color: var(--accent); font-weight: 600; }
+
 /* ---------- Experience ---------- */
 .exp-list {
   list-style: none;
